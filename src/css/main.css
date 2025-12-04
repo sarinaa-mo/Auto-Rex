@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import 'animate.css';
+@import "animate.css/animate.min.css";
+
+
+
+@plugin "daisyui";
+
+
+
+
+
+@font-face {
+    font-family: Es;
+    src: url(../fonts/Estedad-Regular.ttf);
+
+}
+
+@theme{
+    
+    --font-Es:Es;
+}
+
+@font-face{
+    font-family: vaziriNumber;
+    src: url(../fonts/Vazir-Bold-FD-WOL.ttf);
+}
+@theme{
+    
+    --font-vaziriNumber:number;
+}
+
+
+@font-face{
+    font-family: dancing;
+    src: url(../fonts/DancingScript-Regular.ttf);
+}
+@theme{
+    
+    --font-dancing:Dancing;
+}

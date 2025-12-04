@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/css/output.css" />
+   
+
+
+</head>
+<body   class="bg-[#f3f3f3]" >
+
+    <!--#WRAper-->
+    <div class="wrapper lg:max-w-[1440px] w-full mx-auto">
+     <!--#region Banner-->
+      <div
+        class="Banner w-full h-[400px] bg-[url(/src/images/car-1.jpg)] bg-cover bg-center"
+      >
+        <div class="w-full h-full bg-slate-950/50 relative">
+          
+
+          <!--#region menu-->
+         
+          <div  class="absolute left-1/2 top-[200px] -translate-x-1/2 -translate-y-1/2 text-[32px] text-[#FDB713] font-bold font-Es" > مقالات</div>
+          <div   class="absolute left-1/2 top-[230px] -translate-x-1/2 -translate-y-1/2 text-[14px] font-Es font-thin text-white flex space-y-2.5 ">  اتورنت<img src="/src/images/arrow-left.svg"  alt="">مقالات   </div>
+
+          <div
+            class="max-w-[1224px] w-full  lg:h-24 h-auto  bg-white mx-auto rounded-b-2xl px-8 flex  lg:justify-between  items-center     ">
+           
+           
+          <div   class="lg:max-w-[152px] h-[59px] w-full  grow justify-center lg:justify-start " ><img src="/src/images/Logo-banner.png  " alt=""  class="h-[55px]" ></div>
+          <div class="max-w-[507px] h-7  ">  
+            <nav class="lg:max-w-full w-fit h-full lg:flex  lg:justify-center lg:gap-x-10  hidden    ">
+              <div><a href="#"  class="font-Es text-[14px] text-[#353535]  hover:text-yellow-400 cursor-pointer ">رزرو خودرو </a></div>
+              <div><a href="#" class="font-Es text-[14px] text-[#353535]   hover:text-yellow-400 cursor-pointer " >خدمات ما  </a></div>
+              <div><a href="#"class="font-Es text-[14px]  text-[#353535]  hover:text-yellow-400 cursor-pointer " >   بلاگ </a></div>
+              <div><a href="#"class="font-Es text-[14px]  text-[#353535]  hover:text-yellow-400 cursor-pointer " > درباره ما </a></div>
+              <div><a href="#"class="font-Es text-[14px]  text-[#353535]  hover:text-yellow-400 cursor-pointer " > تماس  با ما </a></div>
+              <div><a href="#"><img src="/src/images/search-outline.png"  alt="">  </a></div> 
+            </nav>
+       
+          
+          </div>
+            <!--Register-->
+             <div> <a href="#" class="btn btn-primary btn-sm w-fit md:hidden  lg:inline-flex font-Es lg:text-[16px] hidden text:10px font-thin  hover:bg-blue-700  cursor-pointer whitespace-nowrap ">ورود / ثبت‌نام</a>
+              
+            </div>
+           <!--------Mobile menu------------->
+                     <div  class=" flex items-center justify-center lg:hidden">
+             <!-- Hamburger BTN -->
+  
+<button id="openHamburger" class="lg:hidden mr-3">
+    <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+</button>
+
+
+  <!-- check box -->
+  <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+  <!-- Hamburger Menu -->
+ 
+<div id="hamburgerPanel"
+     class="fixed top-0 right-0 w-64 h-full bg-white shadow-xl z-200
+            translate-x-full transition-all duration-300 lg:hidden">
+
+    <!-- MenuHeader -->
+    <div class="flex items-center justify-between p-4 border-b">
+        <h3 class="font-Es text-[16px] text-[#353535]"><img src="/src/images/Logo-banner.png  " alt="">   </h3> 
+        <button id="closeHamburger" class="text-xl font-bold">✕</button>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="flex flex-col gap-6 p-5 font-Es text-[#353535] text-right">
+
+        <a href="#" class="flex items-center justify-between font-Es hover:text-blue-500">
+            <span>رزرو خودرو</span> <span>›</span>
+        </a>
+
+        <a href="#" class="flex items-center justify-between font-Es hover:text-blue-500">
+            <span>خدمات ما</span> <span>›</span>
+        </a>
+
+        <a href="#" class="flex items-center justify-between font-Es hover:text-blue-500">
+            <span>بلاگ</span> <span>›</span>
+        </a>
+
+        <a href="#" class="flex items-center justify-between font-Es hover:text-blue-500">
+            <span>درباره ما</span> <span>›</span>
+        </a>
+
+        <a href="#" class="flex items-center justify-between font-Es hover:text-blue-500">
+            <span>تماس با ما</span> <span>›</span>
+        </a>
+
+        <a href="#" class="text-blue-600 text-sm mt-2 font-Es">ورود / ثبت‌نام</a>
+    </div>
+</div>
+
+<!-- hamburgerBackdrop-->
+<div id="hamburgerBackdrop"
+     class="fixed inset-0 bg-black/40 backdrop-blur-sm z-150 hidden lg:hidden"></div>
+
+    <!--#EndMobile menu-->
+
+
+          </div>
+            
+       <!--#Endregion menu-->
+        
+      </div>
+      <!--#End-region Banner-->
+        </div>
+
+
+
+        <!-- BLOG LIST SECTION (Put inside <main>, needs Tailwind) -->
+<section class="w-full bg-[#f7f7f7] py-12">
+  <div class="max-w-[1200px] mx-auto px-4">
+
+    <!-- container: use lg:flex-row so visual layout is: left sidebar (visually left) + right content -->
+    <div class="flex flex-col lg:flex-row gap-8">
+
+      <!-- SIDEBAR (lg:width fixed) -->
+      <aside class="lg:w-[300px] w-full order-2 lg:order-1  ">
+
+       
+
+        <!-- Sidebar panel (desktop visible, mobile sidebar flex) -->
+        <div id="sidebarPanel"
+             class="sm:flex-col  lg:block bg-white rounded-2xl p-5 shadow-sm  top-24">
+
+          <!-- Search -->
+          <div class="mb-6">
+            <label class="relative block">
+              <input type="search" placeholder=" جستجو در سایت اجاره خودرو اتورنت..."
+                     class="w-full lg:w-[360px] h-14 px-4 rounded-lg border border-[#E5E7EB] text-xs font-es  focus:outline-none focus:ring-1 focus:ring-yellow-300"/>
+              <img src="./images/search-outline.png"   class="absolute -left-18 top-1/2 -translate-y-1/2 w-4 h-4 text-black"  alt="">
+            </label>
+          </div>
+
+          <!-- Latest posts list -->
+          <div class="mb-6">
+            <h4 class="font-Es font-semibold text-[#353535] text-2xl mb-3">آخرین مقالات</h4>
+            <div class="w-full h-[3px] bg-[#D7D7D7]">
+              <div class="w-15 h-full bg-[#FDB713]"></div>
+            </div>
+            <ul class="space-y-5 mt-5">
+              <li class="flex gap-3 items-center justify-center pb-4 border-b border-gray-300">
+  <!-- IMAGE -->
+  <img src="/src/images/Blog/minipic-1.png" 
+       class="w-[82px] h-[83px] rounded-md object-cover" alt="">
+
+  <!-- TEXT -->
+  <div class="flex-1 flex flex-col justify-center">
+    <a href="#" class="text-[16px] font-Es text-[#494949] hover:text-blue-600">
+      نگاهی به <span class="font-dancing">Lexus NX</span>
+    </a>
+
+    <div class="flex items-center gap-4 text-sm text-[#868686] mt-2 font-es">
+<!-- TIME -->
+      <div class="flex items-center gap-1">
+        <!-- Clock Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"/>
+        </svg>
+        <span class="font-vaziriNumber">۳</span> <span class="font-Es text-[10px] text-[#868686] leading-0">دقیقه</span>
+      </div>
+
+ <!-- VIEWS -->
+      <div class="flex items-center gap-1">
+        <!-- Eye Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.008 9.958 7.178.07.207.07.431 0 .639C20.573 16.49 16.638 19.5 12 19.5c-4.64 0-8.577-3.008-9.964-7.178z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+        <span class="font-vaziriNumber">۲۱,۵۹۷</span>
+      </div>
+        
+
+</div>
+  </div>
+</li>
+ <li class="flex gap-3 items-center pb-4 border-b border-gray-300">
+  <!-- IMAGE -->
+  <img src="/src/images/Blog/minipic-2.png" 
+       class="w-[82px] h-[83px] rounded-md object-cover" alt="">
+
+  <!-- TEXT -->
+  <div class="flex-1 flex flex-col justify-center">
+    <a href="#" class="text-[16px] font-Es text-[#494949] hover:text-blue-600">
+       رونمایی از  <span class="font-dancing"> Lamborghini</span>
+    </a>
+
+   
+    <div class="flex items-center gap-4 text-sm text-[#868686] mt-2 font-es">
+<!-- TIME -->
+      <div class="flex items-center gap-1">
+        <!-- Clock Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"/>
+        </svg>
+        <span class="font-vaziriNumber">۳</span> <span class="font-Es text-[10px] text-[#868686] leading-0">دقیقه</span>
+      </div>
+
+ <!-- VIEWS -->
+      <div class="flex items-center gap-1">
+        <!-- Eye Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.008 9.958 7.178.07.207.07.431 0 .639C20.573 16.49 16.638 19.5 12 19.5c-4.64 0-8.577-3.008-9.964-7.178z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+        <span class="font-vaziriNumber">۲۱,۵۹۷</span>
+      </div>
+        
+
+</div>
+  </div>
+</li>
+   <li class="flex gap-3 items-center justify-center pb-4 border-b border-gray-300">
+  <!-- IMAGE -->
+  <img src="/src/images/Blog/minipic-4.png" 
+       class="w-[82px] h-[83px] rounded-md object-cover" alt="">
+
+  <!-- TEXT -->
+  <div class="flex-1 flex flex-col justify-center">
+    <a href="#" class="text-[16px] font-Es text-[#494949] hover:text-blue-600">
+       رونمایی از فراری <span class="font-dancing"> Roma </span> به تاخیر افتاد
+    </a>
+
+    <div class="flex items-center gap-4 text-sm text-[#868686] mt-2 font-es">
+<!-- TIME -->
+      <div class="flex items-center gap-1">
+        <!-- Clock Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"/>
+        </svg>
+        <span class="font-vaziriNumber">۳</span> <span class="font-Es text-[10px] text-[#868686] leading-0">دقیقه</span>
+      </div>
+
+ <!-- VIEWS -->
+      <div class="flex items-center gap-1">
+        <!-- Eye Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.008 9.958 7.178.07.207.07.431 0 .639C20.573 16.49 16.638 19.5 12 19.5c-4.64 0-8.577-3.008-9.964-7.178z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+        <span class="font-vaziriNumber">۲۱,۵۹۷</span>
+      </div>
+        
+
+</div>
+  </div>
+</li>
+  <li class="flex gap-3 items-center justify-center pb-4 border-b border-gray-300">
+  <!-- IMAGE -->
+  <img src="/src/images/Blog/minipic-3.png" 
+       class="w-[82px] h-[83px] rounded-md object-cover" alt="">
+
+  <!-- TEXT -->
+  <div class="flex-1 flex flex-col justify-center">
+    <a href="#" class="text-[16px] font-Es text-[#494949] hover:text-blue-600">
+        بنتلی  <span class="font-dancing">Bentayga</span> زیر تیغ منصوری
+    </a>
+
+    <div class="flex items-center gap-4 text-sm text-[#868686] mt-2 font-es">
+<!-- TIME -->
+      <div class="flex items-center gap-1">
+        <!-- Clock Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"/>
+        </svg>
+        <span class="font-vaziriNumber">۳</span> <span class="font-Es text-[10px] text-[#868686] leading-0">دقیقه</span>
+      </div>
+
+ <!-- VIEWS -->
+      <div class="flex items-center gap-1">
+        <!-- Eye Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.008 9.958 7.178.07.207.07.431 0 .639C20.573 16.49 16.638 19.5 12 19.5c-4.64 0-8.577-3.008-9.964-7.178z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+        <span class="font-vaziriNumber">۲۱,۵۹۷</span>
+      </div>
+        
+
+</div>
+  </div>
+</li>
+            </ul>
+          </div>
+
+          <!-- Tags / categories -->
+          <div>
+            <h4 class="font-Es font-semibold text-[#353535] text-2xl mb-3">برچسب‌ها</h4>
+            <div class="w-full h-[3px] bg-[#D7D7D7]">
+              <div class="w-15 h-full bg-[#FDB713]"></div>
+            </div>
+            <div class="flex  flex-row mt-[15px] gap-2">
+              <button class="px-3 py-1 bg-gray-100 rounded-full text-sm text-[#494949] font-es text-nowrap  shadow-lg">اجاره خودرو</button>
+              <button class="px-3 py-1 bg-gray-100 rounded-full text-sm text-[#494949]  font-es text-nowrap ">مرسدس بنز</button>
+              <button class="px-3 py-1 bg-gray-100 rounded-full text-sm text-[#494949]  font-es text-nowrap "> ون</button>
+              <button class="px-3 py-1 bg-gray-100 rounded-full text-sm text-[#494949] font-es text-nowrap ">بدون راننده</button>
+            </div>
+          </div>
+
+        </div> <!-- end sidebarPanel -->
+
+        
+        
+ 
+      </aside>
+
+      <!-- MAIN LIST (posts grid) -->
+      <div class="flex-1">
+
+      
+
+        <!-- cards grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2  gap-6">
+
+          <!-- article card -->
+          <article class="bg-white rounded-2xl shadow-lg overflow-hidden border border-[#EAEAEA]">
+            <div class="h-44 bg-gray-100">
+              <img src="/src/images/Blog/pic-1.png" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="p-4">
+              <h3 class="font-Es font-semibold text-[16px] mb-2">روش‌های مختلف برای اجاره خودرو</h3>
+              <p class="text-xs font-Es text-[#757575]  leading-6 mb-3"> امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولاتی شده است...</p>
+              <div class="flex items-center justify-between text-xs text-gray-400">
+                <div class="flex items-center gap-4 text-sm text-[#868686] mt-2 font-es">
+<!-- TIME -->
+      <div class="flex items-center gap-1">
+        <!-- Clock Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"/>
+        </svg>
+        <span class="font-vaziriNumber">۳</span> <span class="font-Es text-[10px] text-[#868686] leading-0">دقیقه</span>
+      </div>
+
+ <!-- VIEWS -->
+      <div class="flex items-center gap-1">
+        <!-- Eye Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.008 9.958 7.178.07.207.07.431 0 .639C20.573 16.49 16.638 19.5 12 19.5c-4.64 0-8.577-3.008-9.964-7.178z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+        <span class="font-vaziriNumber">۲۱,۵۹۷</span>
+      </div>
+        
+
+</div>
+                
+              </div>
+            </div>
+          </article>
+
+          <!-- repeat card2 -->
+          <article class="bg-white rounded-2xl shadow-lg overflow-hidden border border-[#EAEAEA]">
+            <div class="h-44 bg-gray-100">
+              <img src="/src/images/Blog/pic-2.png" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="p-4">
+              <h3 class="font-Es font-semibold text-[16px] mb-2">روش‌های مختلف برای اجاره خودرو</h3>
+              <p class="text-xs font-Es text-[#757575]  leading-6 mb-3">  امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولاتی شده است... </p>
+              <div class="flex items-center justify-between text-xs text-gray-400">
+                <div class="flex items-center gap-4 text-sm text-[#868686] mt-2 font-es">
+<!-- TIME -->
+      <div class="flex items-center gap-1">
+        <!-- Clock Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"/>
+        </svg>
+        <span class="font-vaziriNumber">۳</span> <span class="font-Es text-[10px] text-[#868686] leading-0">دقیقه</span>
+      </div>
+
+ <!-- VIEWS -->
+      <div class="flex items-center gap-1">
+        <!-- Eye Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.008 9.958 7.178.07.207.07.431 0 .639C20.573 16.49 16.638 19.5 12 19.5c-4.64 0-8.577-3.008-9.964-7.178z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+        <span class="font-vaziriNumber">۲۱,۵۹۷</span>
+      </div>
+        
+
+</div>
+                
+              </div>
+            </div>
+            
+          </article>
+           <!-- article card3 -->
+          <article class="bg-white rounded-2xl shadow-lg overflow-hidden border border-[#EAEAEA]">
+            <div class="h-44 bg-gray-100">
+              <img src="/src/images/Blog/pic-3.png" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="p-4">
+              <h3 class="font-Es font-semibold text-[16px] mb-2">روش‌های مختلف برای اجاره خودرو</h3>
+              <p class="text-xs font-Es text-[#757575]  leading-6 mb-3">  امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولاتی شده است...</p>
+              <div class="flex items-center justify-between text-xs text-gray-400">
+                <div class="flex items-center gap-4 text-sm text-[#868686] mt-2 font-es">
+<!-- TIME -->
+      <div class="flex items-center gap-1">
+        <!-- Clock Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"/>
+        </svg>
+        <span class="font-vaziriNumber">۳</span> <span class="font-Es text-[10px] text-[#868686] leading-0">دقیقه</span>
+      </div>
+
+ <!-- VIEWS -->
+      <div class="flex items-center gap-1">
+        <!-- Eye Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.008 9.958 7.178.07.207.07.431 0 .639C20.573 16.49 16.638 19.5 12 19.5c-4.64 0-8.577-3.008-9.964-7.178z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+        <span class="font-vaziriNumber">۲۱,۵۹۷</span>
+      </div>
+        
+
+</div>
+                
+              </div>
+            </div>
+          </article>
+
+          <!-- repeat card4 -->
+          <article class="bg-white rounded-2xl shadow-lg overflow-hidden border border-[#EAEAEA]">
+            <div class="h-44 bg-gray-100">
+              <img src="/src/images/Blog/pic-4.png" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="p-4">
+              <h3 class="font-Es font-semibold text-[16px] mb-2">روش‌های مختلف برای اجاره خودرو</h3>
+              <p class="text-xs font-Es text-[#757575]  leading-6 mb-3"> امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولاتی شده است...</p>
+              <div class="flex items-center justify-between text-xs text-gray-400">
+                <div class="flex items-center gap-4 text-sm text-[#868686] mt-2 font-es">
+<!-- TIME -->
+      <div class="flex items-center gap-1">
+        <!-- Clock Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"/>
+        </svg>
+        <span class="font-vaziriNumber">۳</span> <span class="font-Es text-[10px] text-[#868686] leading-0">دقیقه</span>
+      </div>
+
+ <!-- VIEWS -->
+      <div class="flex items-center gap-1">
+        <!-- Eye Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.008 9.958 7.178.07.207.07.431 0 .639C20.573 16.49 16.638 19.5 12 19.5c-4.64 0-8.577-3.008-9.964-7.178z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+        <span class="font-vaziriNumber">۲۱,۵۹۷</span>
+      </div>
+        
+
+</div>
+               
+              </div>
+            </div>
+            
+          </article>
+           <!-- article card5 -->
+          <article class="bg-white rounded-2xl shadow-lg overflow-hidden border border-[#EAEAEA]">
+            <div class="h-44 bg-gray-100">
+              <img src="/src/images/Blog/pic-5.png" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="p-4">
+              <h3 class="font-Es font-semibold text-[16px] mb-2">روش‌های مختلف برای اجاره خودرو</h3>
+              <p class="text-xs font-Es text-[#757575]  leading-6 mb-3"> امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولاتی شده است...</p>
+              <div class="flex items-center justify-between text-xs text-gray-400">
+               <div class="flex items-center gap-4 text-sm text-[#868686] mt-2 font-es">
+<!-- TIME -->
+      <div class="flex items-center gap-1">
+        <!-- Clock Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"/>
+        </svg>
+        <span class="font-vaziriNumber">۳</span> <span class="font-Es text-[10px] text-[#868686] leading-0">دقیقه</span>
+      </div>
+
+ <!-- VIEWS -->
+      <div class="flex items-center gap-1">
+        <!-- Eye Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.008 9.958 7.178.07.207.07.431 0 .639C20.573 16.49 16.638 19.5 12 19.5c-4.64 0-8.577-3.008-9.964-7.178z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+        <span class="font-vaziriNumber">۲۱,۵۹۷</span>
+      </div>
+        
+
+</div>
+                
+              </div>
+            </div>
+          </article>
+
+          <!-- repeat card6 -->
+          <article class="bg-white rounded-2xl shadow-lg overflow-hidden border border-[#EAEAEA]">
+            <div class="h-44 bg-gray-100">
+              <img src="/src/images/Blog/pic-6.png" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="p-4">
+              <h3 class="font-Es font-semibold text-[16px] mb-2">روش‌های مختلف برای اجاره خودرو</h3>
+              <p class="text-xs font-Es text-[#757575] leading-6 mb-3"> امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولاتی شده است...</p>
+              <div class="flex items-center justify-between text-xs text-gray-400">
+                <div class="flex items-center gap-4 text-sm text-[#868686] mt-2 font-es">
+<!-- TIME -->
+      <div class="flex items-center gap-1">
+        <!-- Clock Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"/>
+        </svg>
+        <span class="font-vaziriNumber">۳</span> <span class="font-Es text-[10px] text-[#868686] leading-0">دقیقه</span>
+      </div>
+
+ <!-- VIEWS -->
+      <div class="flex items-center gap-1">
+        <!-- Eye Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 align-middle" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.008 9.958 7.178.07.207.07.431 0 .639C20.573 16.49 16.638 19.5 12 19.5c-4.64 0-8.577-3.008-9.964-7.178z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+        <span class="font-vaziriNumber">۲۱,۵۹۷</span>
+      </div>
+        
+
+</div>
+                
+              </div>
+            </div>
+            
+          </article>
+          
+
+          <!-- more cards... -->
+        </div>
+
+        <!-- pager -->
+        <div class="mt-8 flex justify-center items-center ">
+          <nav class="inline-flex gap-2">
+            <a href="#" class="text-blue-600 text-sm ">مشاهده همه </a>
+            <a href="#">  <svg  class="mt-1" fill="#194BF0" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="18px" height="18px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g>
+	<path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657
+		c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824
+		c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723
+		C33.234,53.39,33.446,54.017,33.934,54.458z"/>
+</g>
+</svg></a>
+
+
+        </nav>
+        </div>
+
+      </div> <!-- end main list -->
+
+    </div> <!-- end flex container -->
+  </div>
+</section>
+
+
+
+
+
+
+
+     
+
+       <!--#Region-Footer-->
+ <footer>
+  <div class="max-w-[1218px]     h-auto mx-auto mt-20  mb-16 bg-[url(/src/images/bg-footer.png)] bg-cover rounded-2xl overflow-hidden ">
+
+   <div class="w-full  mx-auto rounded-2xl bg-slate-950/70 flex flex-col  items-center justify-start  py-12 ">
+    <!--#section1-->
+  <div class="max-w-[1120px] w-full flex flex-col md:flex-row  items-center lg:justify-between sm:justify-start border border-[#868686] rounded-2xl px-10 py-6 gap-6 bg-linear-[rgba(41, 45, 50, 0.85)]
+   ">
+
+    <!-- Item 1 -->
+    <div class="max-w-[254px] lg:h-[69px]  flex  items-center gap-3 text-white justify-center">
+      <img src="/src/images/maop-icon.svg" class="w-10 h-10 " />
+      <div class="text-center">
+        <p class="font-bold font-Es">آدرس</p>
+        <p class="text-[14px] mt-4 font-Es ">تهران – خ شادمان</p>
+      </div>
+      
+    </div>
+     <!-- Divider -->
+      <div aria-hidden="true" class="hidden md:block w-px h-10 bg-white/40"></div>
+
+
+    <!-- Item 2 -->
+    <div class="max-w-[254px] lg:h-[69px] flex items-center gap-3 text-white justify-center  lg:pr-6">
+      <img src="/src/images/mailbox-icon.svg" class="w-10 h-10" />
+      <div class="text-center">
+        <p class=" font-Es font-bold">ایمیل</p>
+        <p class="text-[14px] mt-4 font-dancing">autorent@info.com</p>
+      </div>
+      
+    </div>
+     <!-- Divider -->
+      <div aria-hidden="true" class="hidden md:block w-px h-10 bg-white/40"></div>
+
+
+    <!-- Item 3 -->
+    <div class="max-w-[254px] lg:h-[69px] flex   items-center gap-6 text-white lg:justify-center ">
+      <img src="/src/images/Telephon-icon.svg" class="w-10 h-10 items-start-right " />
+      <div class="text-center ">
+        <p class="font-bold font-Es">ارتباط با ما</p>
+        <p class="text-[14px] mt-4 font-vaziriNumber">۰۹۱۲-۱۲۳۴۵۶۷</p>
+      </div>
+      
+    </div>
+  </div>
+   <!--#Endsection1-->
+   <!--section2-->
+  <div class="max-w-[1170px] w-full  mt-4  items-center flex flex-col lg:flex-row lg:justify-between justify-center pr-6 gap-6  px-6 ">
+
+      <div class="max-w-[1115px] w-full  md:pr-[27px]  flex flex-col md:flex-row gap-10">
+       <!--Right side-->
+        <div class=" max-w-[572px] w-full  flex flex-col  md:flex-row items-start gap-10">
+            <div class="w-full md:w-auto text-right ">
+           <img src="/src/images/footer-Logo.svg" alt="#">
+           <p class="text-white lg:text-[14px]  leading-6 text-right justify-center font-Es font-thin lg:mt-6 sm:mt-6">
+            اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگترین ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا تجاری در سراسر کشور ایران آماده خدمت‌رسانی به مشتریان است.
+            </p>
+           </div>
+           <!--Quik links-->
+           <div class=" w-full  flex flex-col   gap-2    ">
+             <h2 class="text-white text-[14px]  font-Es  font-semibold mb-1 leading-relaxed " >دسترسی آسان</h2>
+            <p class="text-white text-[14px]  font-Es font-thin hover:text-yellow-400 cursor-pointer lg:mt-6 sm:mt-4 " > سوالات متداول </p>
+            <p class="text-white text-[14px]  font-Es font-thin hover:text-yellow-400 cursor-pointer" >  تماس با ما </p>
+             <p class="text-white text-[14px]  font-Es font-thin hover:text-yellow-400 cursor-pointer" >   درباره ما </p>
+  
+           </div>  
+           
+
+
+
+
+             </div>
+                   <!-- Left side (Newsletter) -->
+        <div class=" max-w-[320px] w-full h-20 md:ml-[150px] flex  flex-col  items-start md:gap-3 sm:gap-2 text-right lg:mt-11  ">
+           <h4 class="text-white text-[16px] font-Es font-semibold ">خبرنامه</h4>
+           <form action="#" class="flex items-center border border-gray-400 rounded-md overflow-hidden">
+            <input 
+        type="email" 
+        name="email" 
+        placeholder="ایمیل خود را وارد کنید"
+        class="bg-transparent text-white placeholder-gray-400 text-[14px] font-Es font-thin px-3 py-2 focus:outline-none max-w-[200px]" 
+      />
+      <button 
+        type="submit"
+        class="bg-yellow-500 hover:bg-yellow-400 text-black text-[14px] font-Es font-semibold px-5 py-2 rounded-md  overflow-hidden "
+      >
+        ارسال
+      </button>
+    </form>
+  </div>
+ 
+            </div>
+            <!--#EndRight-side-->
+
+         
+ 
+
+  </div>
+  <!-- خط جداکننده و کپی‌رایت -->
+<div class="w-full max-w-[1170px] mx-auto mt-6 border-t border-white/30 pt-4  ">
+  
+ 
+  <p class="text-white/60 text-[12px] text-center font-Es font-thin flex items-center justify-center gap-1">
+    <img src="/src/images/cc.svg" alt="" class="max-w-4 h-4 ">
+    <span>تمامی حقوق این وب‌سایت متعلق به اتورنت می‌باشد.</span>
+    
+  </p>
+</div>
+ 
+ </div>
+ 
+ 
+  </div>
+
+  
+</footer>
+  <!--#End-Region-Footer-->
+
+
+
+
+
+
+
+
+      </div>
+    <!--#EndWRAper-->
+    
+
+
+
+
+
+
+<script>
+  // Hamburger Menu
+  const openHamburger = document.getElementById("openHamburger");
+  const closeHamburger = document.getElementById("closeHamburger");
+  const hamburgerPanel = document.getElementById("hamburgerPanel");
+  const hamburgerBackdrop = document.getElementById("hamburgerBackdrop");
+
+  openHamburger.onclick = () => {
+    hamburgerPanel.classList.remove("translate-x-full");
+    hamburgerBackdrop.classList.remove("hidden");
+  };
+
+  closeHamburger.onclick = () => {
+    hamburgerPanel.classList.add("translate-x-full");
+    hamburgerBackdrop.classList.add("hidden");
+  };
+
+  hamburgerBackdrop.onclick = () => {
+    hamburgerPanel.classList.add("translate-x-full");
+    hamburgerBackdrop.classList.add("hidden");
+  };
+</script>
+ 
+
+
+
+    
+</body>
+</html>

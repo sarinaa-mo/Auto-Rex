@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User account</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/css/output.css" />
+   
+    
+</head>
+<body  class="bg-[#f3f3f3]"  >
+
+      <!--#WRAper-->
+    <div class="wrapper lg:max-w-[1440px] w-full mx-auto">
+      <!--#region Banner-->
+      <div class="Banner w-full h-[400px]" >
+        <div class="w-full h-full relative">
+          
+
+          <!--#region menu-->
+         
+       
+
+          <div
+            class="max-w-[1224px] w-full  lg:h-24 h-auto  bg-white mx-auto rounded-b-2xl px-8 flex  lg:justify-between  items-center lg:flex-wrap sm:relative   ">
+           
+           
+          <div   class="lg:max-w-[152px] h-[59px] w-full  " ><img src="/src/images/Logo-banner.png  " alt=""></div>
+          <div class="max-w-[507px] h-7  ">  
+            <nav class="lg:max-w-full w-fit h-full lg:flex  lg:justify-center lg:gap-x-10  hidden flex-row    ">
+              <div><a href="#"  class="font-Es text-[14px] text-[#353535]  hover:text-blue-500cursor-pointer ">رزرو خودرو </a></div>
+              <div><a href="#" class="font-Es text-[14px] text-[#353535]   hover:text-blue-500 cursor-pointer " >خدمات ما  </a></div>
+              <div><a href="#"class="font-Es text-[14px]  text-[#353535]  hover:text-blue-500 cursor-pointer " >   بلاگ </a></div>
+              <div><a href="#"class="font-Es text-[14px]  text-[#353535]  hover:text-blue-500 cursor-pointer " > درباره ما </a></div>
+              <div><a href="#"class="font-Es text-[14px]  text-[#353535]  hover:text-blue-500 cursor-pointer " > تماس  با ما </a></div>
+              <div><a href="#"><img src="/src/images/search-outline.png"  alt="">  </a></div> 
+            </nav>
+            <div  class=" flex items-center justify-center lg:hidden">
+             <!-- Hamburger BTN -->
+  
+<button id="openHamburger" class="lg:hidden mr-3">
+    <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+</button>
+
+
+  <!-- check box -->
+  <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+  <!-- Hamburger Menu -->
+ 
+<div id="hamburgerPanel"
+     class="fixed top-0 right-0 w-64 h-full bg-white shadow-xl z-200
+            translate-x-full transition-all duration-300 lg:hidden">
+
+    <!-- MenuHeader -->
+    <div class="flex items-center justify-between p-4 border-b">
+        <h3 class="font-Es text-[16px] text-[#353535]"><img src="/src/images/Logo-banner.png  " alt="">   </h3> 
+        <button id="closeHamburger" class="text-xl font-bold">✕</button>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="flex flex-col gap-6 p-5 font-Es text-[#353535] text-right">
+
+        <a href="#" class="flex items-center justify-between font-Es hover:text-blue-500">
+            <span >رزرو خودرو</span> <span>›</span>
+        </a>
+
+        <a href="#" class="flex items-center justify-between font-Es hover:text-blue-500">
+            <span  >خدمات ما</span> <span>›</span>
+        </a>
+
+        <a href="#" class="flex items-center justify-between font-Es hover:text-blue-500">
+            <span>بلاگ</span> <span>›</span>
+        </a>
+
+        <a href="#" class="flex items-center justify-between font-Es hover:text-blue-500">
+            <span>درباره ما</span> <span>›</span>
+        </a>
+
+        <a href="#" class="flex items-center justify-between font-Es hover:text-blue-500">
+            <span>تماس با ما</span> <span>›</span>
+        </a>
+
+        <a href="#" class="text-blue-600 text-sm mt-2 font-Es">ورود / ثبت‌نام</a>
+    </div>
+</div>
+
+<!-- hamburgerBackdrop-->
+<div id="hamburgerBackdrop"
+     class="fixed inset-0 bg-black/40 backdrop-blur-sm z-150 hidden lg:hidden"></div>
+
+   
+       <!-- userMenuProfile -->
+<div class="lg:hidden flex items-center gap-2 mr-3">
+  <button id="openUserMenu" class="flex items-center gap-2">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 12.75C8.83 12.75 6.25 10.17 6.25 7C6.25 3.83 8.83 1.25 12 1.25C15.17 1.25 17.75 3.83 17.75 7C17.75 10.17 15.17 12.75 12 12.75ZM12 2.75C9.66 2.75 7.75 4.66 7.75 7C7.75 9.34 9.66 11.25 12 11.25C14.34 11.25 16.25 9.34 16.25 7C16.25 4.66 14.34 2.75 12 2.75Z" fill="#494949"/>
+<path d="M20.5901 22.75C20.1801 22.75 19.8401 22.41 19.8401 22C19.8401 18.55 16.3202 15.75 12.0002 15.75C7.68015 15.75 4.16016 18.55 4.16016 22C4.16016 22.41 3.82016 22.75 3.41016 22.75C3.00016 22.75 2.66016 22.41 2.66016 22C2.66016 17.73 6.85015 14.25 12.0002 14.25C17.1502 14.25 21.3401 17.73 21.3401 22C21.3401 22.41 21.0001 22.75 20.5901 22.75Z" fill="#494949"/>
+</svg>
+  </button>
+
+<!-- Hidden userMenuPanel -->
+<div id="userMenuPanel" 
+     class="fixed top-0 right-0 w-72 h-full bg-white shadow-xl z-200 
+            translate-x-full transition-all duration-300 lg:hidden">
+    
+    <div class="flex items-center justify-between p-4 border-b  shadow-2xl">
+        <div class="flex items-center gap-2">
+            <img src="/src/images/UserAcoount/Scarlett.webp" class="w-12 h-12 rounded-full" />
+            <div> 
+                <h2 class="text-[16px] font-Es text-[#353535]">اولدوز بهاور</h2>
+                <span class="text-gray-500 text-sm font-vaziriNumber mt-3">۰۹۱۲۳۴۵۶۷۸۹</span>
+            </div>
+        </div>
+        <button id="closeUserMenu" class="text-xl font-bold">✕</button>
+    </div>
+
+    <div class="flex flex-col gap-6 p-5 font-Es text-[#353535] text-right ">
+        <div class="flex items-center justify-between hover:text-blue-500 cursor-pointer">
+         <a href="#" class="w-6 h-6 block bg-[url('/src/images/useracoount/wallet.svg')] hover:bg-[url('/src/images/useracoount/wallet2.svg')] bg-contain bg-no-repeat transition"> </a>
+        <span   class="font-Es text-[13px] text-right text-[#353535] hover:text-blue-500" > کیف پول</span>
+        <span>›</span>
+      </div>
+        <div class="flex items-center justify-between font-Es cursor-pointer hover:text-blue-500  ">
+           <a href="#" class="w-6 h-6 block bg-[url('/src/images/useracoount/loc.svg')] hover:bg-[url('/src/images/useracoount/loc2.svg')] bg-contain bg-no-repeat transition"> </a>
+            <span   class="font-Es text-[13px] text-right text-[#353535] hover:text-blue-500" >آدرس‌های من</span><span>›</span>
+        </div>
+        <div class="flex items-center justify-between group-[hover]:text-blue-500 cursor-pointer">
+         <a href="#" class="w-6 h-6 block bg-[url('/src/images/useracoount/card2.svg')] hover:bg-[url('/src/images/useracoount/card.svg')] bg-contain bg-no-repeat transition"> </a>
+        <span   class="font-Es text-[13px] text-right text-[#353535] hover:text-blue-500"> پرداخت های من </span>
+        <span>›</span>
+      </div>
+         <div class="flex items-center justify-between hover:text-blue-500 cursor-pointer">
+         <a href="#" class="w-6 h-6 block bg-[url('/src/images/useracoount/boble.svg')] hover:bg-[url('/src/images/useracoount/boble2.svg')] bg-contain bg-no-repeat transition"> </a>
+        <span  class="font-Es text-[13px] text-right text-[#353535] hover:text-blue-500" > نظرات من </span>
+        <span>›</span>
+      </div>
+
+        <div class="flex gap-1 mt-2 text-red-500 cursor-pointer hover:text-red-700">
+     <img src="/src/images/UserAcoount/exit.svg" alt="">
+     <span   class="font-es text-[13px] " >خروج</span>
+    </div>
+    </div>
+</div>
+
+<!-- Backdrop-->
+<div id="userMenuBackdrop" 
+     class="fixed inset-0 bg-black/40 backdrop-blur-sm z-150 hidden lg:hidden"></div>
+
+
+
+
+</div>
+</div>
+          
+          </div>
+            <!--#personalPic-->
+            <div class="max-w-[121px] h-11  hidden  lg:flex flex-row items-center justify-center gap-1 ">
+                <img src="/src/images/UserAcoount/Scarlett.webp"  class="w-11 h-11 rounded-full " alt="">
+            <div class="w-[73px] h-7 text-nowrap" >
+              <span  class="text-[16px] font-Es text-[#353535] " > اولدوز بهاور </span>
+            </div>
+             
+            </div>
+   <!--#Endregion menu-->
+
+          </div>
+       
+       <!--#End-region Banner-->
+
+       <!-- #region Dashboard -->
+<div class="max-w-[1224px] mx-auto flex flex-col lg:flex-row justify-between mt-10 gap-6 ">
+
+  <!-- RightSidbar  -->
+  <div class="lg:w-[288px] w-full lg:block hidden bg-white rounded-2xl p-5 shadow-sm">
+    <!-- userProfile -->
+    <div class="flex flex-row items-center justify-between  pb-4 mb-4">
+      <img src="/src/images/UserAcoount/Scarlett.webp" class="w-16 h-16 rounded-full mb-2" alt="">
+     <div class="flex flex-col justify-center max-w-[288px] h-[92px] ">
+       <h2 class="font-Es text-[16px] text-[#353535]">اولدوز بهاور</h2>
+      <span class="text-gray-500 text-sm font-vaziriNumber ">۰۹۱۲۳۴۵۶۷۸۹</span>
+      
+     </div>
+        <img src="/src/images/UserAcoount/Edit .svg" alt="">
+    </div>
+    
+    <!-- Menu items -->
+    <div class=" max-w-[288px] h-[372px] flex flex-col  gap-6 text-[#353535] font-Es text-right group  ">
+      <div class="flex items-center justify-between hover:text-blue-500 cursor-pointer">
+         <a href="#" class="w-6 h-6 block bg-[url('/src/images/useracoount/wallet.svg')] hover:bg-[url('/src/images/useracoount/wallet2.svg')] bg-contain bg-no-repeat transition"> </a>
+        <span   class="font-Es text-[13px] text-right text-[#353535] hover:text-blue-500" > کیف پول</span>
+        <span>›</span>
+      </div>
+     <div class="flex items-center justify-between hover:text-blue-500 cursor-pointer">
+        <a href="#" class="w-6 h-6 block bg-[url('/src/images/useracoount/loc.svg')] hover:bg-[url('/src/images/useracoount/loc2.svg')] bg-contain bg-no-repeat transition"> </a>
+        <span class="font-Es text-[13px] text-right text-[#353535] hover:text-blue-500" > آدرس های من</span>
+        <span>›</span>
+      </div>
+      <div class="flex items-center justify-between group-[hover]:text-blue-500 cursor-pointer">
+         <a href="#" class="w-6 h-6 block bg-[url('/src/images/useracoount/card2.svg')] hover:bg-[url('/src/images/useracoount/card.svg')] bg-contain bg-no-repeat transition"> </a>
+        <span   class="font-Es text-[13px] text-right text-[#353535] hover:text-blue-500"> پرداخت های من </span>
+        <span>›</span>
+      </div>
+      <div class="flex items-center justify-between hover:text-blue-500 cursor-pointer">
+         <a href="#" class="w-6 h-6 block bg-[url('/src/images/useracoount/boble.svg')] hover:bg-[url('/src/images/useracoount/boble2.svg')] bg-contain bg-no-repeat transition"> </a>
+        <span  class="font-Es text-[13px] text-right text-[#353535] hover:text-blue-500" > نظرات من </span>
+        <span>›</span>
+      </div>
+       <!-- exit buttom -->
+    <div class="flex gap-1 mt-2 text-red-500 cursor-pointer hover:text-red-700">
+     <img src="/src/images/UserAcoount/exit.svg" alt="">
+     <span   class="font-es text-[13px] " >خروج</span>
+    </div>
+      
+    </div>
+
+   
+  </div>
+
+  <!--  dashbord data -->
+ <div class="w-full bg-white rounded-2xl p-6 border border-gray-200">
+
+    <!-- Title -->
+    <div class="text-right font-Es text-lg font-bold mb-6">پرداخت‌های من</div>
+
+
+    
+        <!-- Right (Image) -->
+        <!-- CARD 1 -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 py-6 items-center">
+
+
+      
+        <!-- Right -->
+        <div class="flex justify-start">
+            <img src="./images/UserAcoount/Lexus.png"
+                 class="w-60 h-[150px] rounded-xl object-cover" />
+        </div>
+
+         <!-- Middle -->
+        <div class="text-right font-Es">
+            <div class="text-[#353535] font-semibold">
+          لکسوس  <span class="font-normal text-sm font-dancing">(Lexus IS 300)</span>
+            </div>
+            <div class="text-xs text-[#AEAEAE] mt-1 font-Es ">مدل: 2024</div>
+            <div class="text-xs text-[#AEAEAE] font-Es">مدت: ۳ روز</div>
+        </div>
+
+        <!-- Left -->
+        <div class="flex flex-col text-right space-y-1">
+            <span class="text-[#269E22] font-bold text-sm  font-Es ">پرداخت موفق</span>
+
+            <span class="text-[#5E5E5E] font-bold text-sm font-Es ">
+                شناسه پرداخت:
+                <span class="text-[#212121] font-vaziriNumber">۱۳۷۵۹۴۷۶۹۷</span>
+            </span>
+
+            <span class="text-[#5E5E5E] font-bold font-Es text-sm">
+                شماره حساب:
+                <span class="text-[#1a0e0e] font-vaziriNumber">۰۱۷۸۷۹۶۹۳۵۰۳۴۷۷</span>
+            </span>
+
+            <span class="text-[#5E5E5E] font-bold font-Es text-sm">
+                دارنده حساب: اتورنت گستر ایرانیان
+            </span>
+        </div>
+
+       
+
+
+    </div>
+
+    <!-- Divider -->
+    <div class="w-full h-px bg-gray-200 my-4"></div>
+
+    <!-- CARD 2 (same structure) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 py-6 items-center">
+
+
+      
+        <!-- Right -->
+        <div class="flex justify-start">
+            <img src="./images/UserAcoount/Martin .png"
+                 class="w-60 h-[150px] rounded-xl object-cover" />
+        </div>
+
+         <!-- Middle -->
+        <div class="text-right font-Es">
+            <div class="text-[#353535] font-semibold font-Es">
+                آستون مارتین <span class="font-dancing text-sm  ">(Aston Martin DBS)</span>
+            </div>
+            <div class="text-xs text-[#AEAEAE] mt-1 font-Es ">مدل: 2024</div>
+            <div class="text-xs text-[#AEAEAE] font-Es">مدت: ۳ روز</div>
+        </div>
+
+        <!-- Left -->
+        <div class="flex flex-col text-right space-y-1">
+            <span class="text-red-500 font-bold text-sm font-Es">پرداخت ناموفق</span>
+
+            <span class="text-[#5E5E5E] font-bold text-sm font-Es">
+                شناسه پرداخت:
+                <span class="text-[#212121] font-vaziriNumber ">۱۳۵۳۵۹۴۶۷۹۷</span>
+            </span>
+
+            <span class="text-[#5E5E5E] font-bold text-sm font-Es">
+                شماره حساب:
+                <span class="text-[#212121]   font-vaziriNumber ">۰۱۷۸۷۹۶۹۳۵۰۳۴۷۷</span>
+            </span>
+
+            <span class="text-[#5E5E5E] font-bold text-sm font-Es">
+                دارنده حساب: اتورنت گستر ایرانیان
+            </span>
+        </div>
+
+       
+
+
+    </div>
+
+</div>
+<!-- #endregion Dashboard -->
+
+        
+      </div>
+      
+
+      
+      </div>
+    <!--#EndWRAper-->
+    
+
+
+<script>
+  const openBtn = document.getElementById("openUserMenu");
+  const closeBtn = document.getElementById("closeUserMenu");
+  const panel = document.getElementById("userMenuPanel");
+  const backdrop = document.getElementById("userMenuBackdrop");
+
+  openBtn.onclick = () => {
+    panel.classList.remove("translate-x-full");
+    backdrop.classList.remove("hidden");
+  };
+
+  closeBtn.onclick = () => {
+    panel.classList.add("translate-x-full");
+    backdrop.classList.add("hidden");
+  };
+
+  backdrop.onclick = () => {
+    panel.classList.add("translate-x-full");
+    backdrop.classList.add("hidden");
+  };
+</script>
+
+<script>
+  // Hamburger Menu
+  const openHamburger = document.getElementById("openHamburger");
+  const closeHamburger = document.getElementById("closeHamburger");
+  const hamburgerPanel = document.getElementById("hamburgerPanel");
+  const hamburgerBackdrop = document.getElementById("hamburgerBackdrop");
+
+  openHamburger.onclick = () => {
+    hamburgerPanel.classList.remove("translate-x-full");
+    hamburgerBackdrop.classList.remove("hidden");
+  };
+
+  closeHamburger.onclick = () => {
+    hamburgerPanel.classList.add("translate-x-full");
+    hamburgerBackdrop.classList.add("hidden");
+  };
+
+  hamburgerBackdrop.onclick = () => {
+    hamburgerPanel.classList.add("translate-x-full");
+    hamburgerBackdrop.classList.add("hidden");
+  };
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

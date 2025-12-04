@@ -1,0 +1,22 @@
+{
+  "name": "autorex",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tailwind": "npx @tailwindcss/cli -i ./src/css/main.css -o ./src/css/output.css --watch"
+  },
+  "devDependencies": {
+    "daisyui": "^5.5.8",
+    "vite": "^7.2.4"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "animate.css": "^4.1.1",
+    "preline": "^3.2.3",
+    "tailwindcss": "^4.1.17"
+  }
+}
