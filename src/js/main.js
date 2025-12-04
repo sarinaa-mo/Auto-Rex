@@ -1,4 +1,7 @@
 
+import "../css/main.css";
+
+
 export default {
   content: [
     "./index.html",
